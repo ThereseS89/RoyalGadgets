@@ -9,6 +9,8 @@ header {
 }
 
 p {
+	width: 276px;
+	height: 19px;
 	color: #D19B2A;
 	font-family: 'Itim', cursive;
 	grid-column: 2;
@@ -19,7 +21,8 @@ p {
 }
 
 .logo {
-	height: 13em;
+	height: 120px;
+	width: 214;
 	padding-top: 2em;
 	grid-column: 2;
 	justify-self: center;
@@ -33,6 +36,8 @@ p {
 	justify-self: end;
 	font-size: 3em;
 	padding-right: 1em;
-	position: relative;
-	top: -45px;
+	position: absolute;
+	top: 120px;
+	bottom: 0px;
+	right: -40px;
 }
