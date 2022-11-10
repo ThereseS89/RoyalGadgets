@@ -42,7 +42,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 7px;
     padding-right: 7px;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 #footer-content span {
@@ -51,6 +51,7 @@ footer {
     font-weight: bold;
 }
 
+/* Footer Lists */
 #footer-content ul {
     list-style-type: none;
     padding-left: 7px;
@@ -103,4 +104,12 @@ footer {
 
 #logo-branding {
     font-family: 'Wallpoet', sans-serif;
+}
+
+@media (orientation: landscape) {
+    .footer-group {
+        display: grid;
+        justify-content: center;
+        align-content: flex-start;
+    }
 }
