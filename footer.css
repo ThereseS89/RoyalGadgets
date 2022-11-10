@@ -4,6 +4,21 @@
     margin: 0px;
 }
 
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Advent Pro;
+    src: url(fonts/AdventPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: Wallpoet;
+    src: url(fonts/Wallpoet-Regular.ttf);
+}
+
 footer {
     position: relative;
     bottom: 0px;
@@ -38,10 +53,12 @@ footer {
 }
 
 #footer-social-content {
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    width: 100vw;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    position: absolute;
+    right: 7px;
+    padding-left: 7px;
 }
 
 #footer-branding-box {
@@ -52,7 +69,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-    position: relative;
-    bottom: -15px;
     border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    bottom: 0px;
 }
