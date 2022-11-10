@@ -56,10 +56,15 @@ footer {
     padding-left: 7px;
 }
 
-#footer-content li {
+.footer-group li {
     font-family: 'Advent Pro', sans-serif;
     font-size: 16px;
     font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.footer-group li:last-child {
+    padding-bottom: 0px;
 }
 
 /* Social Media Stuff */
@@ -69,10 +74,15 @@ footer {
     font-size: 18px;
     position: absolute;
     right: 7px;
+    bottom: 48px;
 }
 
 #footer-social-content > * {
     padding-left: 7px;
+}
+
+#footer-social-content > i {
+    font-size: 1.35em;
 }
 
 /* Footer Branding */
