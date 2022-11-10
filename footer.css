@@ -1,9 +1,11 @@
+/* Not that important */
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
 
+/* Fonts used by footer */
 @font-face {
     font-family: Ubuntu;
     src: url(fonts/Ubuntu-Regular.ttf);
@@ -19,6 +21,7 @@
     src: url(fonts/Wallpoet-Regular.ttf);
 }
 
+/* Footer */
 footer {
     position: relative;
     bottom: 0px;
@@ -30,11 +33,16 @@ footer {
     border-radius: 5px 5px 0px 0px;
     margin: 0px;
     padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
+/* Footer Related Content */
 #footer-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
 }
 
 #footer-content span {
@@ -45,22 +53,29 @@ footer {
 
 #footer-content ul {
     list-style-type: none;
+    padding-left: 7px;
 }
 
 #footer-content li {
-    font-family: 'Advent pro', sans-serif;
+    font-family: 'Advent Pro', sans-serif;
     font-size: 16px;
+    font-weight: bold;
 }
 
+/* Social Media Stuff */
 #footer-social-content {
     width: auto;
     height: auto;
     font-size: 18px;
     position: absolute;
     right: 7px;
+}
+
+#footer-social-content > * {
     padding-left: 7px;
 }
 
+/* Footer Branding */
 #footer-branding-box {
     background-color: #D19B2A;
     color: #fff;
@@ -72,4 +87,10 @@ footer {
     border-radius: 5px 5px 0px 0px;
     position: absolute;
     bottom: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+#logo-branding {
+    font-family: 'Wallpoet', sans-serif;
 }
