@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 footer {
     position: relative;
     bottom: 0px;
@@ -31,17 +37,11 @@ footer {
     font-size: 16px;
 }
 
-#footer-social {
+#footer-social-content {
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1em;
     justify-content: flex-end;
     align-content: flex-end;
-    width: 158px;
-}
-
-#footer-social span {
-    grid-area: 1/-8/1/5;
+    width: 100vw;
 }
 
 #footer-branding-box {
