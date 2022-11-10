@@ -1,0 +1,22 @@
+footer {
+    position: relative;
+    box-sizing: border-box;
+    width: 100vw;
+    color: #D19B2A;
+    background-color: #E0C79A;
+    height: 240px;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Advent pro', sans-serif;
+}
+
+footer span {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style-type: none;
+}
