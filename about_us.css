@@ -84,8 +84,11 @@ strong {
 }
 
 .box > p {
-    padding: 1em;
     width: inherit;
+}
+
+.info-box > p {
+    padding: 1em;
 }
 
 .box > *:not(img) {
