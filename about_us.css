@@ -5,7 +5,7 @@
     margin: 0px;
 }
 
-/* Fonts used by footer */
+/* Fonts used by footer and content */
 @font-face {
     font-family: Ubuntu;
     src: url(fonts/Ubuntu-Regular.ttf);
@@ -20,6 +20,12 @@
     font-family: Wallpoet;
     src: url(fonts/Wallpoet-Regular.ttf);
 }
+
+@font-face {
+    font-family: Jost;
+    src: url(fonts/Jost-VariableFont_wght.ttf);
+}
+
 html, body {
     background-color: #F6EFE2;
     width: 100%;
@@ -74,12 +80,17 @@ h1 {
 
 .box-left > p, .box-right > p {
     padding: 1em;
-    width: 95vw;
+    width: inherit;
+}
+
+.profile-box p {
+    padding: 0.5em;
+    width: inherit;
 }
 
 .box-left > .profile-img, .box-right > .profile-img {
     width: 80px;
-    height: unset;
+    height: 92px;
 }
 
 .box-row {
