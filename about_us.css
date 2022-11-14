@@ -32,7 +32,7 @@ main > * {
 .box-left, .box-right {
     width: 95vw;
     height: auto;
-    min-height: 45px;
+    min-height: 50px;
     background-color: #fff;
     border: 1px solid #D19B2A;
     display: flex;
@@ -64,11 +64,18 @@ main > * {
 
 .box-left > .profile-img, .box-right > .profile-img {
     width: 80px;
+    height: 92px;
     flex-grow: 0;
 }
 
 .box-row {
     flex-flow: row nowrap;
+}
+
+.contact-box > i.fa-solid {
+    font-size: 1.65em;
+    display: flex;
+    align-self: center;
 }
 
 /* Footer */
