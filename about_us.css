@@ -27,6 +27,7 @@ html, body {
 /* Content */
 main > * {
     margin-bottom: 21px;
+    float: left;
 }
 
 .box-left, .box-right {
@@ -46,9 +47,9 @@ main > * {
 }
 
 .box-right {
-    margin-left: 5vw;
     border-radius: 5px 0px 0px 5px;
     border-right: 0px;
+    float: right;
 }
 
 .box-left > img, .box-right > img  {
@@ -77,6 +78,7 @@ main > * {
     align-self: center;
     padding: 0.45em;
     padding-left: 1em;
+    color: #D19B2A;
 }
 
 /* Footer */
