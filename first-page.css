@@ -80,6 +80,18 @@ p {
 	width: 95vw;
 }
 
+h1 {
+	background-color: #E0C79A;
+	border-bottom: 2px solid #D19B2A;
+	border-radius:0px 0px 5px 5px;
+	padding-top: 0,15px;
+	color: white;
+	text-align: center;
+	font-family: 'ubuntu', sans-serif;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px #415257;
+}
+
 .box-5 {
 	align-items: center;
 	border-left: transparent;
