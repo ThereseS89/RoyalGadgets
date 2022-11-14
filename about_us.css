@@ -20,6 +20,38 @@
     font-family: Wallpoet;
     src: url(fonts/Wallpoet-Regular.ttf);
 }
+html, body {
+    background-color: #F6EFE2;
+}
+
+/* Content */
+.box-left, .box-right {
+    width: 95vw;
+    height: auto;
+    min-height: 45px;
+    background-color: #fff;
+    border: 1px solid #D19B2A;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    margin-bottom: 21px;
+}
+
+.box-left {
+    border-radius: 0px 5px 5px 0px;
+    border-left-color: transparent;
+}
+
+.box-left > img, .box-right > img  {
+    flex-grow: 1;
+    width: 95vw;
+}
+
+.box-left > p, .box-right > p {
+    padding: 1em;
+    flex-grow: 1;
+    width: 95vw;
+}
 
 /* Footer */
 footer {
