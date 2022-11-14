@@ -49,10 +49,10 @@ h1 {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     padding-top: 0.15em;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #415257;
 }
 
-.box-left, .box-right {
+.box {
     width: 95vw;
     height: auto;
     min-height: 50px;
