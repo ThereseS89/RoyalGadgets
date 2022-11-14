@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 main {
 	background-color: #F6EFE2;
 	display: flex;
@@ -7,43 +13,44 @@ main {
 div {
 	background-color: white;
 	border: #E0C79A solid 1px;
+	border-radius: 5px;
 	font-family: 'Jost', sans-serif;
 	font-weight: lighter;
 	font-size: 18px;
 	display: flex;
+	height: auto;
+	width: 95vw;
+	min-height: 45px;
+	overflow: hidden;
 }
 
 .box-1 {
-	width: 416px;
-	height: 137px;
-	text-align: center;
+	border-left: transparent;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
 }
 
 .othercolor {
 	color: #D19B2A;
-	position: relative;
-	text-align: center;
 	font-size: 16px;
-	width: 250px;
-	left: -10em;
-	top: 6em;
 }
 
 .box-2 {
-	width: 401px;
-	height: 194px;
 	align-self: flex-end;
+	border-right: transparent;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
 }
 
 .box-2-text {
 	align-self:center;
 	padding-left: 2em;
-
 }
 
 .box-3 {
-	width: 399px;
-	height: 191px;
+	border-left: transparent;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
 }
 
 .box-3-text {
@@ -53,50 +60,40 @@ div {
 }
 
 .box-4 {
-	width: 374px;
-	height: 244px;
 	align-self: flex-end;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	
+	justify-content: end;
+	border-right: transparent;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+p {
+	padding: 
 }
 
 h3 {
 	font-size: 18px;
-	grid-column: 1;
 	padding-bottom: 0px;
 }
 
-.open {
-	grid-row: 3;
-	grid-column: 1;
-}
-
-.box-4-text-adress {
-	padding-top: 0px;
-	grid-column: 1;
-	grid-row: 2;
-}
-
-.box-4-text-open {
-grid-column: 1;
-grid-row: 4;
-}
-
 .box-5 {
-	width: 337px;
-	height: 47px;
+	align-items: center;
+	border-left: transparent;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
 }
 
-.phone {
+.fa-phone {
 	border: 0px;
 	color: #D19B2A;
+	font-size: 25px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 6px;
 }
 .mixer {
 	height: 137px;
 	width: 166px;
-	align-self: flex-end;
 }
 
 .stavmixer {
@@ -112,6 +109,5 @@ grid-row: 4;
 .karlstad {
 	height: 204px;
 	width: 244px;
-	grid-column: 2;
-	grid-row: 1;
+	padding-left: 2em;
 }
