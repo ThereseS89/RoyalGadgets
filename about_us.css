@@ -55,20 +55,17 @@ main > * {
 }
 
 .box-left > img, .box-right > img  {
-    flex-grow: 1;
     width: 95vw;
 }
 
 .box-left > p, .box-right > p {
     padding: 1em;
-    flex-grow: 1;
     width: 95vw;
 }
 
 .box-left > .profile-img, .box-right > .profile-img {
     width: 80px;
-    height: 92px;
-    flex-grow: 0;
+    height: unset;
 }
 
 .box-row {
