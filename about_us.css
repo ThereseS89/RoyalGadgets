@@ -67,6 +67,10 @@ main > * {
     flex-grow: 0;
 }
 
+.box-row {
+    flex-flow: row nowrap;
+}
+
 /* Footer */
 footer {
     position: relative;
