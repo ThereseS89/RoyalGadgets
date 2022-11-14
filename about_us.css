@@ -25,6 +25,10 @@ html, body {
 }
 
 /* Content */
+main > * {
+    margin-bottom: 21px;
+}
+
 .box-left, .box-right {
     width: 95vw;
     height: auto;
@@ -34,12 +38,17 @@ html, body {
     display: flex;
     flex-flow: column wrap;
     overflow: hidden;
-    margin-bottom: 21px;
 }
 
 .box-left {
     border-radius: 0px 5px 5px 0px;
     border-left-color: transparent;
+}
+
+.box-right {
+    margin-left: 5vw;
+    border-radius: 5px 0px 0px 5px;
+    border-right-color: transparent;
 }
 
 .box-left > img, .box-right > img  {
@@ -51,6 +60,11 @@ html, body {
     padding: 1em;
     flex-grow: 1;
     width: 95vw;
+}
+
+.box-left > .profile-img, .box-right > .profile-img {
+    width: 80px;
+    flex-grow: 0;
 }
 
 /* Footer */
