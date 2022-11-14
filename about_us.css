@@ -42,13 +42,13 @@ main > * {
 
 .box-left {
     border-radius: 0px 5px 5px 0px;
-    border-left-color: transparent;
+    border-left: 0px;
 }
 
 .box-right {
     margin-left: 5vw;
     border-radius: 5px 0px 0px 5px;
-    border-right-color: transparent;
+    border-right: 0px;
 }
 
 .box-left > img, .box-right > img  {
@@ -74,8 +74,9 @@ main > * {
 
 .contact-box > i.fa-solid {
     font-size: 1.65em;
-    display: flex;
     align-self: center;
+    padding: 0.45em;
+    padding-left: 1em;
 }
 
 /* Footer */
