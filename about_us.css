@@ -98,8 +98,12 @@ strong {
     align-content: space-between;
 }
 
-.box-row:not(.profile-box, .info-box) > *:not(img) {
+.box-row:not(.profile-box, .info-box, .contact-box) > *:not(img) {
     align-content: space-around;
+}
+
+#city-img {
+    width: 55vw;
 }
 
 .profile-box p {
@@ -111,6 +115,7 @@ strong {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    word-break: break-all;
 }
 
 .profile-box > .profile-img {
@@ -126,7 +131,7 @@ strong {
     font-size: 1.65em;
     align-self: center;
     padding: 0.45em;
-    padding-left: 1em;
+    padding-left: 0.25em;
     color: #D19B2A;
 }
 
