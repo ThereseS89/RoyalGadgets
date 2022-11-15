@@ -212,6 +212,8 @@ footer {
     font-family: 'Wallpoet', sans-serif;
 }
 
+
+/* Responsive Stuff */
 @media (orientation: landscape) {
     /* Content */
     h1 {
@@ -235,6 +237,18 @@ footer {
     }
     .box > img {
         width: 55vw;
+    }
+    /* Profile Stuff */
+    .profile-box {
+        flex-flow: column wrap;
+        place-items: center;
+    }
+    .profile-box > *:not(.profile-img) {
+        order: 1;
+    }
+    .profile-box > .profile-img {
+        height: 30vh;
+        width: 20vw;
     }
     /* Footer */
     .footer-group {
