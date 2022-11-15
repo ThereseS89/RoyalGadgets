@@ -213,9 +213,34 @@ footer {
 }
 
 @media (orientation: landscape) {
+    /* Content */
+    h1 {
+        font-size: 26px;
+        width: 55vw;
+    }
+    body {
+        font-size: 20px;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .box {
+        width: 55vw;
+        float: unset;
+        border-radius: 5px;
+        border: 1px solid #D19B2A;
+    }
+    .box > img {
+        width: 55vw;
+    }
+    /* Footer */
     .footer-group {
         display: grid;
         justify-content: center;
         align-content: flex-start;
     }
 }
+
