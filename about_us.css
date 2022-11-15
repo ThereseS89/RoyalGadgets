@@ -95,6 +95,10 @@ strong {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-content: space-between;
+}
+
+.box-row:not(.profile-box, .info-box) > *:not(img) {
     align-content: space-around;
 }
 
@@ -240,11 +244,12 @@ footer {
     }
     /* Profile Stuff */
     .profile-box {
-        flex-flow: column wrap;
         place-items: center;
     }
     .profile-box > *:not(.profile-img) {
         order: 1;
+        word-break: break-all;
+        padding-left: 0.75em;
     }
     .profile-box > .profile-img {
         height: 30vh;
