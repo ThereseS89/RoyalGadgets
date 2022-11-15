@@ -268,3 +268,9 @@ footer {
     }
 }
 
+@media (orientation: portrait) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
