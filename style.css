@@ -11,7 +11,7 @@ main {
 
 }
 
-div {
+.box {
 	background-color: white;
 	border: #E0C79A solid 1px;
 	border-radius: 5px;
@@ -20,8 +20,8 @@ div {
 	font-size: 18px;
 	display: flex;
 	height: auto;
-	max-width: 95vw;
-	min-height: 45px;
+	width: 95vw;
+	min-height: 50px;
 	overflow: hidden;
 }
 
@@ -125,4 +125,18 @@ h1 {
 .karlstad {
 	height: auto;
 	width: 244px;
+}
+
+@media (orientation: landscape) {
+	.box {
+		width: 55vw;
+		align-self: center;
+		border-radius: 5px;
+		border: 1px solid #E0C79A;
+	}
+
+	h1 {
+		width: 55vw;
+		align-self: center;
+	}
 }

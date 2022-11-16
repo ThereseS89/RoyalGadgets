@@ -49,11 +49,10 @@ label:after {
 nav {
 	z-index: 1;
     position: absolute;
-    top: -800px;
+    top: -1000px;
 	right: 0px;
     width: 100vw;
 	height: 100vh; 
-	border: solid 1px;
 	background-color:#F6EFE2;
 	color: black;
 	padding: 0px;
