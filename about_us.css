@@ -26,6 +26,11 @@
     src: url(fonts/Jost-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Itim;
+    src: url(fonts/Itim-Regular.ttf);
+}
+
 html, body {
     background-color: #F6EFE2;
     width: 100%;
