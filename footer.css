@@ -29,10 +29,9 @@ footer {
     width: 100%;
     color: #D19B2A;
     background-color: #E0C79A;
-    height: 240px;
     border-radius: 5px 5px 0px 0px;
     margin: 0px;
-    padding: 0px;
+    padding-bottom: 2.75em;
     font-family: 'Ubuntu', sans-serif;
     float: left;
 }
@@ -40,10 +39,9 @@ footer {
 /* Footer Related Content */
 #footer-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 7px;
+    grid-template-columns: repeat(auto-fit, 130px);
+    padding-top: 1.5em;
+    justify-content: center;
 }
 
 #footer-content span {
@@ -67,6 +65,10 @@ footer {
 
 .footer-group li:last-child {
     padding-bottom: 0px;
+}
+
+.footer-group {
+    padding-bottom: 1.25em;
 }
 
 /* Social Media Stuff */
