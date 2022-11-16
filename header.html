@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>header</title>
+	<title>navigation-menu</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,28 @@
 </head>
 <body>
 	<header>
-	<p>Makes you feel like a royal in the kitchen</p>
-	<img class="logo" src="/2.png">
-	
-	 <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
-	
+		<div id=topbar>
+			<div class="menu"></div>
+		</div>
+		<input type="checkbox" id="toggle"/>
+		<label for="toggle" role="button">
+			<span></span>
+		</label>
+		
+		<nav id="navigation"> 
+			<h1>MENY</h1>
+			<ul>
+				<li><a href="Hem">Hem</a></li><br/>
+				<li><a href="Våra produkter">Våra produkter</a></li><br />
+				<li><a href="Om Royal Gadgets">Om Royal Gadgets</a></li><br/>
+				<li><a href="Kontakta oss">Kontakta oss</a></li><br/>
+				<li><a href="Recept">Recept</a></li><br/>
+			</ul>
+		</nav>
+		
+
+		<p>Makes you feel like a royal in the kitchen</p>
+		<img class="logo" src="/2.png">
 	
 	</header>
 </body>
