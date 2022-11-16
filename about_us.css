@@ -226,7 +226,7 @@ footer {
 /* Responsive Stuff */
 @media (orientation: landscape) {
     /* Content */
-    h1 {
+    main h1 {
         font-size: 26px;
         width: 55vw;
     }
