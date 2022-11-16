@@ -1,123 +1,142 @@
 * {
-    margin: 0%;
-    padding: 0%;
     box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:#F6EFE2;
-    width: 100%;
+	background-color: #F6EFE2;
+	display: flex;
+	flex-direction: column;
+
 }
-.container-1{
-    width: 100%;
+
+.box {
+	background-color: white;
+	border: #E0C79A solid 1px;
+	border-radius: 5px;
+	font-family: 'Jost', sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	display: flex;
+	height: auto;
+	width: 95vw;
+	min-height: 50px;
+	overflow: hidden;
 }
-.container-2{
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
+
+.box-1 {
+	border-left: transparent;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	flex-flow: nowrap;
 }
-.container-3{
-    width: 100%;
+
+.othercolor {
+	color: #D19B2A;
+	font-size: 16px;
+	width: 95vw;
 }
-.box-2{
-    width:96%;
-    margin: 20px 20px 20px 0;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row-reverse;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
-  position: relative;
-  height:234px;
-  border-top: 2px solid #E0C79A;
-  border-bottom: 1px solid #E0C79A;
+
+p {
+	padding: 1em;
+	width: 95vw;
 }
-.box-1{
-    width:96%;
-    margin: 20px 20px 20px 0;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row-reverse;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
+
+.box-2 {
+	align-self: flex-end;
+	border-right: transparent;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
 }
-.box-3{
-    display: flex;
-    width: 100%;
-    position: relative;
-    height: 300px;
+
+.box-2-text {
+	align-self:center;
+	padding-left: 1em;
 }
-.box-4{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 95%;
-    background-color: #FFFFFF;
-    border-bottom-left-radius: 7px;
-border-top-left-radius: 7px;
+
+.box-3 {
+	border-left: transparent;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
 }
-.text-box{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 300;
-    line-height: 21px;
-    border-bottom: 1px solid #E8D5B3;
-    border-top: 1px solid #E8D5B3;
+
+.box-3-text {
+	align-self: center;
+	padding-left: 1em;
+	padding-right: 1em;
 }
-.text-box2{
-    width: 65%;
-    display: flex;
-    margin-top:30px;
-    justify-content: center;
-    z-index: 2;
-    position: absolute;
-    left:0;
-    font-family: 'Ubuntu';
-font-style: normal;
-line-height: 1.8;
+
+.box-4 {
+	align-self: flex-end;
+	justify-content: end;
+	border-right: transparent;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
 }
-.text-box3{
-    position: absolute;
-    z-index: 2;
-    right:0;
-    top: 10px;
-    height:240px;
-    width: 38%;
-    background-color: #fff;
-    padding: 15px 0 0 0;
-    border-bottom: 1px solid #E0C79A;
-    border-top: 1px solid #E0C79A;
-    border-left: 1px solid #E0C79A;
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px;
+
+.box-4-text {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 95vw;
 }
-.text-box4{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 300;
-line-height: 21px;
-border-bottom: 1px solid #E8D5B3;
-border-top: 1px solid #E8D5B3;
-border-left: 1px solid #E8D5B3;
-padding:0 0 0 10px;
-border-bottom-left-radius: 7px;
-border-top-left-radius: 7px;
+
+h1 {
+	background-color: #E0C79A;
+	border-bottom: 2px solid #D19B2A;
+	border-radius:0px 0px 5px 5px;
+	padding-top: 0.15px;
+	color: white;
+	text-align: center;
+	font-family: 'ubuntu', sans-serif;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px #415257;
+}
+
+.box-5 {
+	align-items: center;
+	border-left: transparent;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	flex-flow: nowrap;
+}
+
+.fa-phone {
+	border: 0px;
+	color: #D19B2A;
+	font-size: 25px;
+	padding: 10px;
+}
+.mixer {
+	height: auto;
+	width: 166px;
+}
+
+.stavmixer {
+	height: 194px;
+	width: 158px;
+}
+
+.smoothies {
+	height: auto;
+	width: 131px;
+}
+
+.karlstad {
+	height: auto;
+	width: 244px;
+}
+
+@media (orientation: landscape) {
+	.box {
+		width: 55vw;
+		align-self: center;
+		border-radius: 5px;
+		border: 1px solid #E0C79A;
+	}
+
+	h1 {
+		width: 55vw;
+		align-self: center;
+	}
 }
