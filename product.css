@@ -1,0 +1,269 @@
+/* Not that important */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Fonts used by footer and content */
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Advent Pro;
+    src: url(fonts/AdventPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: Wallpoet;
+    src: url(fonts/Wallpoet-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(fonts/Jost-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Itim;
+    src: url(fonts/Itim-Regular.ttf);
+}
+
+html, body {
+    background-color: #F6EFE2;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Content */
+main > * {
+    margin-bottom: 21px;
+    float: left;
+}
+
+main h1 {
+    width: 100%;
+    color: #fff;
+    background-color: #E0C79A;
+    border-bottom: 1px solid #D19B2A;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    text-shadow: 1px 1px 1px #415257;
+}
+
+strong {
+    display: contents;
+}
+
+.box {
+    width: 95vw;
+    height: auto;
+    min-height: 50px;
+    background-color: #fff;
+    border: 1px solid #D19B2A;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+}
+
+.box-left {
+    border-radius: 0px 5px 5px 0px;
+    border-left: 0px;
+}
+
+.box-right {
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0px;
+    float: right;
+}
+
+.box:not(.info-box) > img {
+    width: 95vw;
+}
+
+.box > p {
+    width: inherit;
+}
+
+.info-box > p {
+    padding: 1em;
+}
+
+.box > *:not(img) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.box-row:not(.profile-box, .info-box, .contact-box) > *:not(img, .recipe-box) {
+    align-content: space-around;
+}
+
+#city-img {
+    width: 55vw;
+}
+
+.profile-box p {
+    padding: 0.025em;
+    width: inherit;
+}
+
+.profile-box > *:not(.profile-img) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    word-break: break-all;
+}
+
+.profile-box > .profile-img {
+    width: 80px;
+    height: 92px;
+}
+
+.box-row {
+    flex-flow: row nowrap;
+}
+
+.contact-box > i.fa-solid {
+    font-size: 1.65em;
+    align-self: center;
+    padding: 0.45em;
+    padding-left: 0.25em;
+    color: #D19B2A;
+}
+
+/* Product */
+#explosionsketch {
+    height: 15em;
+    width: 10em;
+    padding-right: 1.5em;
+}
+
+.cosutmer-box img {
+    min-width: 45vw;
+}
+
+/* Recipe Stuff */
+.recipe-container {
+    background-image: url('./imgs/recept.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.recipe-box {
+    background-color: #fff;
+    width: 50vw;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #D19B2A;
+    border-right: none;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.recipe-box ul {
+    width: 100%;
+    padding-top: 0.5em;
+}
+
+.recipe-box ul li {
+    padding-left: 1em;
+    list-style: inside;
+}
+
+.recipe-box p {
+    padding: 1em;
+    width: 100%;
+ }
+
+.recipe-box h2 {
+    width: 100%;
+    font-size: 22px;
+    color: #fff;
+    background-color: #E0C79A;
+    margin-top: 21px;
+    border-bottom: 1px solid #D19B2A;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    text-shadow: 1px 1px 1px #415257;
+}
+
+/* Responsive Stuff */
+@media (orientation: landscape) {
+    /* Content */
+    main h1 {
+        font-size: 26px;
+        width: 55vw;
+    }
+    body {
+        font-size: 20px;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .box {
+        width: 55vw;
+        float: unset;
+        border-radius: 5px;
+        border: 1px solid #D19B2A;
+    }
+    .box > img {
+        width: 55vw;
+        flex: 1;
+    }
+    /* Recipe */
+    .recipe-box {
+        width: 30vw;
+    }
+    
+    /* Profile Stuff */
+    .profile-box {
+        place-items: center;
+    }
+    .profile-box > *:not(.profile-img) {
+        order: 1;
+        padding-left: 0.75em;
+    }
+    .profile-box > .profile-img {
+        height: 30vh;
+        width: 20vw;
+    }
+    /* Product */
+    #explosionsketch {
+        height: 14em;
+        width: 10em;
+        flex: unset;
+    }
+    .blender-box img {
+        width: 22em;
+        flex: unset;
+    }
+    .cosutmer-box img {
+        min-width: 10em;
+        flex: unset;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
