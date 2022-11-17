@@ -39,9 +39,9 @@ footer {
 /* Footer Related Content */
 #footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 130px);
+    grid-template-columns: repeat(auto-fit, 124px);
     padding-top: 1.5em;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #footer-content span {
@@ -53,7 +53,6 @@ footer {
 /* Footer Lists */
 #footer-content ul {
     list-style-type: none;
-    padding-left: 7px;
 }
 
 .footer-group li {
@@ -61,6 +60,16 @@ footer {
     font-size: 16px;
     font-weight: bold;
     padding-bottom: 7px;
+}
+
+.footer-group li a {
+    color: #D19B2A;
+    text-decoration: none;
+}
+
+.footer-group li a:hover {
+    color: #FAFAFA;
+    text-decoration: none;
 }
 
 .footer-group li:last-child {
@@ -110,9 +119,15 @@ footer {
 }
 
 @media (orientation: landscape) {
+    #footer-content {
+        grid-template-columns: repeat(auto-fit, 160px);
+    }
     .footer-group {
         display: grid;
         justify-content: center;
         align-content: flex-start;
+    }
+    .footer-group li {
+        font-size: 20px;
     }
 }
