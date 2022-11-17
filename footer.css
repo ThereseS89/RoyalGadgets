@@ -1,0 +1,133 @@
+/* Not that important */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Fonts used by footer */
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Advent Pro;
+    src: url(fonts/AdventPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: Wallpoet;
+    src: url(fonts/Wallpoet-Regular.ttf);
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    color: #D19B2A;
+    background-color: #E0C79A;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px;
+    padding-bottom: 2.75em;
+    font-family: 'Ubuntu', sans-serif;
+    float: left;
+}
+
+/* Footer Related Content */
+#footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 124px);
+    padding-top: 1.5em;
+    justify-content: space-evenly;
+}
+
+#footer-content span {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer Lists */
+#footer-content ul {
+    list-style-type: none;
+}
+
+.footer-group li {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.footer-group li a {
+    color: #D19B2A;
+    text-decoration: none;
+}
+
+.footer-group li a:hover {
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+.footer-group li:last-child {
+    padding-bottom: 0px;
+}
+
+.footer-group {
+    padding-bottom: 1.25em;
+}
+
+/* Social Media Stuff */
+#footer-social-content {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    position: absolute;
+    right: 7px;
+    bottom: 48px;
+}
+
+#footer-social-content > * {
+    padding-left: 7px;
+}
+
+#footer-social-content > i {
+    font-size: 1.35em;
+}
+
+/* Footer Branding */
+#footer-branding-box {
+    background-color: #D19B2A;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    bottom: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+#logo-branding {
+    font-family: 'Wallpoet', sans-serif;
+}
+
+@media (orientation: landscape) {
+    #footer-content {
+        grid-template-columns: repeat(auto-fit, 160px);
+    }
+    .footer-group {
+        display: grid;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    .footer-group li {
+        font-size: 20px;
+    }
+}
