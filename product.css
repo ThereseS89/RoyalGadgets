@@ -84,7 +84,7 @@ strong {
     float: right;
 }
 
-.box > img {
+.box:not(.info-box) > img {
     width: 95vw;
 }
 
@@ -103,7 +103,7 @@ strong {
     align-content: space-between;
 }
 
-.box-row:not(.profile-box, .info-box, .contact-box) > *:not(img) {
+.box-row:not(.profile-box, .info-box, .contact-box) > *:not(img, .recipe-box) {
     align-content: space-around;
 }
 
@@ -140,25 +140,51 @@ strong {
     color: #D19B2A;
 }
 
+/* Product */
+#explosionsketch {
+    height: 15em;
+    width: 10em;
+    padding-right: 1.5em;
+}
+
+.cosutmer-box img {
+    min-width: 45vw;
+}
+
 /* Recipe Stuff */
 .recipe-container {
     background-image: url('./imgs/recept.png');
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: flex-end;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 .recipe-box {
-    width: 20vw;
     background-color: #fff;
-    float: right;
+    width: 50vw;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #D19B2A;
+    border-right: none;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.recipe-box ul {
+    width: 100%;
+    padding-top: 0.5em;
 }
 
 .recipe-box ul li {
-   padding-left: 12px;
-   list-style: inside;
+    padding-left: 1em;
+    list-style: inside;
 }
 
+.recipe-box p {
+    padding: 1em;
+    width: 100%;
+ }
 
 .recipe-box h2 {
     width: 100%;
@@ -202,6 +228,11 @@ strong {
         width: 55vw;
         flex: 1;
     }
+    /* Recipe */
+    .recipe-box {
+        width: 30vw;
+    }
+    
     /* Profile Stuff */
     .profile-box {
         place-items: center;
@@ -214,11 +245,19 @@ strong {
         height: 30vh;
         width: 20vw;
     }
-    /* Footer */
-    .footer-group {
-        display: grid;
-        justify-content: center;
-        align-content: flex-start;
+    /* Product */
+    #explosionsketch {
+        height: 14em;
+        width: 10em;
+        flex: unset;
+    }
+    .blender-box img {
+        width: 22em;
+        flex: unset;
+    }
+    .cosutmer-box img {
+        min-width: 10em;
+        flex: unset;
     }
 }
 
