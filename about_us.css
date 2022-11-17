@@ -266,12 +266,6 @@ footer {
         height: 30vh;
         width: 20vw;
     }
-    /* Footer */
-    .footer-group {
-        display: grid;
-        justify-content: center;
-        align-content: flex-start;
-    }
 }
 
 @media (orientation: portrait) {
