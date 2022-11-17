@@ -140,94 +140,6 @@ strong {
     color: #D19B2A;
 }
 
-/* Footer */
-footer {
-    position: relative;
-    bottom: 0px;
-    box-sizing: border-box;
-    width: 100%;
-    color: #D19B2A;
-    background-color: #E0C79A;
-    border-radius: 5px 5px 0px 0px;
-    margin: 0px;
-    padding-bottom: 2.75em;
-    font-family: 'Ubuntu', sans-serif;
-    float: left;
-}
-
-/* Footer Related Content */
-#footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 130px);
-    padding-top: 1.5em;
-    justify-content: center;
-}
-
-#footer-content span {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* Footer Lists */
-#footer-content ul {
-    list-style-type: none;
-    padding-left: 7px;
-}
-
-.footer-group li {
-    font-family: 'Advent Pro', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    padding-bottom: 7px;
-}
-
-.footer-group li:last-child {
-    padding-bottom: 0px;
-}
-
-.footer-group {
-    padding-bottom: 1.25em;
-}
-
-/* Social Media Stuff */
-#footer-social-content {
-    width: auto;
-    height: auto;
-    font-size: 18px;
-    position: absolute;
-    right: 7px;
-    bottom: 48px;
-}
-
-#footer-social-content > * {
-    padding-left: 7px;
-}
-
-#footer-social-content > i {
-    font-size: 1.35em;
-}
-
-/* Footer Branding */
-#footer-branding-box {
-    background-color: #D19B2A;
-    color: #fff;
-    width: 100%;
-    height: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    border-radius: 5px 5px 0px 0px;
-    position: absolute;
-    bottom: 0px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-}
-
-#logo-branding {
-    font-family: 'Wallpoet', sans-serif;
-}
-
 /* Responsive Stuff */
 @media (orientation: landscape) {
     /* Content */
@@ -265,12 +177,6 @@ footer {
     .profile-box > .profile-img {
         height: 30vh;
         width: 20vw;
-    }
-    /* Footer */
-    .footer-group {
-        display: grid;
-        justify-content: center;
-        align-content: flex-start;
     }
 }
 
