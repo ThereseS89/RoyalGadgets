@@ -523,7 +523,7 @@ footer {
         width: 55vw;
         float: unset;
         border-radius: 5px;
-        border: 1px solid #D19B2A;
+        border: 1px solid #E0C79A;
     }
     .box > img {
         width: 22vw;
@@ -571,6 +571,9 @@ footer {
         width: 278px;
         top: -11px;
 
+    }
+    main {
+        padding-top: 30vh;
     }
 
 }
