@@ -29,14 +29,13 @@
 	border-radius: 10px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 5px #E0C79A;
 	border-radius: 10px;
 
   }
   
-  /* Handle */
+
   ::-webkit-scrollbar-thumb {
 	background: #D19B2A;
 	border-radius: 10px;
