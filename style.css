@@ -51,6 +51,7 @@ header {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	align-items: start;
+	justify-items: center;
 	border-bottom: #E0C79A solid 3px;
     border-radius: 0px 0px 5px 5px;
 }
