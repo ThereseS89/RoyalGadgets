@@ -1,3 +1,11 @@
+/* Not that important */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Fonts used by footer and content */
 @font-face {
     font-family: Ubuntu;
     src: url(fonts/Ubuntu-Regular.ttf);
@@ -41,19 +49,27 @@
 	border-radius: 10px;
   }
 
-
+html, body {
+    background-color: #F6EFE2;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Jost', sans-serif;
+}
 header {
 	position: fixed;
-	width: 100%;
 	background-color: white;
-	height: 14em;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	align-items: start;
-	justify-items: center;
+    justify-items: center;
 	border-bottom: #E0C79A solid 3px;
     border-radius: 0px 0px 5px 5px;
+}
+
+header, .header-filler {
+    height: 14em;
+    width: 100%;
 }
 
 Input {
@@ -177,7 +193,7 @@ header p {
 	grid-row: 2;
 	position: relative;
 	top: -9px;
-	white-space: nowrap;
+    white-space: nowrap;
 }
 
 .logo {
@@ -190,144 +206,109 @@ header p {
 }
 
 
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+/* Content */
+main > * {
+    margin-bottom: 21px;
+    float: left;
 }
 
-main {
-	background-color: #F6EFE2;
-	display: flex;
-	flex-direction: column;
-	padding-top: 14em;
+
+main h1 {
+    width: 100%;
+    color: #fff;
+    background-color: #E0C79A;
+    border-bottom: 1px solid #D19B2A;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    text-shadow: 1px 1px 1px #415257;
 }
 
-main a{
-	color:#D19B2A;
-	text-decoration: none;
-}
-
-main a:hover {
-	font-weight: bold;
-	color:#000;
-	font-style: italic;
+strong {
+    display: contents;
 }
 
 .box {
-	background-color: white;
-	border: #E0C79A solid 1px;
-	border-radius: 5px;
-	font-family: 'Jost', sans-serif;
-	font-weight: lighter;
-	font-size: 18px;
-	display: flex;
-	height: auto;
-	width: 95vw;
-	min-height: 50px;
-	overflow: hidden;
+    width: 95vw;
+    height: auto;
+    min-height: 50px;
+    background-color: #fff;
+    border: 1px solid #D19B2A;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
 }
 
-.box-1 {
-	border-left: transparent;
-	border-bottom-left-radius: 0px;
-	border-top-left-radius: 0px;
-	flex-flow: nowrap;
+.box-left {
+    border-radius: 0px 5px 5px 0px;
+    border-left: 0px;
 }
 
-.othercolor {
-	color: #D19B2A;
-	font-size: 16px;
-	width: 95vw;
+.box-right {
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0px;
+    float: right;
 }
 
-p:not(header p) {
-	padding: 1em;
-	width: 95vw;
+.box > img {
+    width: 95vw;
 }
 
-.box-2 {
-	align-self: flex-end;
-	border-right: transparent;
-	border-bottom-right-radius: 0px;
-	border-top-right-radius: 0px;
+.box > p {
+    width: inherit;
 }
 
-.box-2-text {
-	align-self:center;
-	padding-left: 1em;
+.info-box > p {
+    padding: 1em;
 }
 
-.box-3 {
-	border-left: transparent;
-	border-bottom-left-radius: 0px;
-	border-top-left-radius: 0px;
+.box > *:not(img) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-between;
 }
 
-.box-3-text {
-	align-self: center;
-	padding-left: 1em;
-	padding-right: 1em;
+.box-row:not(.profile-box, .info-box, .contact-box) > *:not(img) {
+    align-content: flex-end;
+    padding-right: 1em;
 }
 
-.box-4 {
-	align-self: flex-end;
-	justify-content: end;
-	border-right: transparent;
-	border-bottom-right-radius: 0px;
-	border-top-right-radius: 0px;
+#city-img {
+    width: 55vw;
 }
 
-.box-4-text {
-	padding-top: 1em;
-	padding-bottom: 1em;
-	width: 95vw;
+.profile-box p {
+    padding: 0.025em;
+    width: inherit;
+    padding-left: 1em;
 }
 
-h1 {
-	background-color: #E0C79A;
-	border-bottom: 2px solid #D19B2A;
-	border-radius:0px 0px 5px 5px;
-	padding-top: 0.15px;
-	color: white;
-	text-align: center;
-	font-family: 'ubuntu', sans-serif;
-	font-size: 20px;
-	text-shadow: 1px 1px 1px #415257;
+.profile-box > *:not(.profile-img) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    word-break: break-all;
 }
 
-.box-5 {
-	align-items: center;
-	border-left: transparent;
-	border-bottom-left-radius: 0px;
-	border-top-left-radius: 0px;
-	flex-flow: nowrap;
+.profile-box > .profile-img {
+    width: 80px;
+    height: 92px;
 }
 
-.fa-phone {
-	border: 0px;
-	color: #D19B2A;
-	font-size: 25px;
-	padding: 10px;
-}
-.mixer {
-	height: auto;
-	width: 166px;
+.box-row {
+    flex-flow: row nowrap;
 }
 
-.stavmixer {
-	height: 194px;
-	width: 158px;
-}
-
-.smoothies {
-	height: auto;
-	width: 131px;
-}
-
-.karlstad {
-	height: auto;
-	width: 244px;
+.contact-box > i.fa-solid {
+    font-size: 1.65em;
+    align-self: center;
+    padding: 0.45em;
+    padding-left: 0.25em;
+    color: #D19B2A;
 }
 
 /* Footer */
@@ -427,26 +408,48 @@ footer {
     font-family: 'Wallpoet', sans-serif;
 }
 
+
+
+/* Responsive Stuff */
 @media (orientation: landscape) {
+    /* Content */
+    main h1 {
+        font-size: 26px;
+        width: 55vw;
+    }
+    body {
+        font-size: 20px;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .box {
+        width: 55vw;
+        float: unset;
+        border-radius: 5px;
+        border: 1px solid #D19B2A;
+    }
+    .box > img {
+        width: 55vw;
+        flex: 1;
+    }
+    /* Profile Stuff */
+    .profile-box {
+        place-items: center;
+    }
+    .profile-box > *:not(.profile-img) {
+        order: 1;
+        padding-left: 0.75em;
+    }
+    .profile-box > .profile-img {
+        height: 15vh;
+        width: 10vw;
+    }
 
-	body {
-		font-size: 20px;
-	}
-
-	.box {
-		width: 55vw;
-		align-self: center;
-		border-radius: 5px;
-		border: 1px solid #E0C79A;
-		font-size: 20px;
-	}
-
-	h1 {
-		width: 55vw;
-		align-self: center;
-	}
-
-	#footer-content {
+    #footer-content {
         grid-template-columns: repeat(auto-fit, 160px);
     }
     .footer-group {
@@ -458,3 +461,10 @@ footer {
         font-size: 20px;
     }
 }
+
+@media (orientation: portrait) {
+    body {
+        overflow-x: hidden;
+    }
+}
+

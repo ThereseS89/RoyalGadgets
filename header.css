@@ -1,0 +1,139 @@
+
+
+header {
+	background-color: white;
+	height: 40vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-items: start;
+}
+
+Input {
+	position: absolute;
+	top: -99px;
+	right: -99px;
+}
+
+label {
+    position: absolute;
+    z-index: 100;
+    top: -6px;
+    right: 20px;
+    width: 3em;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+label::before, label span, label::after {
+    display: block;
+    position: relative;
+    height: 7px;
+    background-color: #000;
+    transition: all .2s;
+    border-radius: 5px;
+}
+
+label::before {
+    top: -5px;
+    width: 3em;
+    content: '';
+}
+
+label:after {
+    top: 5px;
+    width: 3em;
+    content: '';
+}
+
+nav {
+	z-index: 1;
+    position: absolute;
+    top: -1000px;
+	right: 0px;
+    width: 100vw;
+	height: 100vh; 
+	background-color:#F6EFE2;
+	color: black;
+	padding: 0px;
+}
+
+
+nav h1 {
+	position: absolute;
+	top: -20px;
+	width: 100vw;
+	background-color: #E0C79A;
+	text-align: center;
+	border-bottom: #D19B2A 2px solid;
+	border-radius: 0px 0px 5px 5px;
+	padding-top:0.5em;
+	padding-bottom: 1em;
+	font-family: 'Itim', sans-serif;
+	font-size: 26px;
+	color: white;
+	text-shadow: 1px 1px 1px #415257;
+}
+
+#toggle:checked ~ nav {
+    top: 0px;
+	right: 0px;
+}
+
+#toggle:checked ~ label::before {
+    transform: rotate(-45deg); 
+    top: 4px;
+    width: 3em; 
+	
+}
+
+#toggle:checked ~ label span {
+    display: none;
+}
+
+#toggle:checked ~ label::after {
+    transform: rotate(45deg);
+    top: -1px;
+    width: 3em;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	top: 100px;
+	list-style: none;
+	font-size: 28px;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li a {
+	color: #000000;
+	text-decoration: none;
+	font-family: 'Itim', sans-serif;
+
+}
+
+
+p {
+	width: 276px;
+	height: 19px;
+	color: #D19B2A;
+	font-family: 'Itim', cursive;
+	grid-column: 2;
+	grid-row: 2;
+	justify-self: center;
+	position: relative;
+	top: -25px
+}
+
+.logo {
+	height: 120px;
+	width: 214;
+	padding-top: 2em;
+	grid-column: 2;
+	justify-self: center;
+	align-self: end;
+}
