@@ -41,6 +41,7 @@
 	border-radius: 10px;
   }
 
+
 header {
 	position: fixed;
 	width: 100%;
@@ -168,7 +169,7 @@ header ul li a:hover {
 
 
 header p {
-	width: 308px;
+	width: 385px;
 	height: 19px;
 	color: #D19B2A;
 	font-family: 'Itim', cursive;
@@ -428,11 +429,16 @@ footer {
 
 @media (orientation: landscape) {
 
+	body {
+		font-size: 20px;
+	}
+
 	.box {
 		width: 55vw;
 		align-self: center;
 		border-radius: 5px;
 		border: 1px solid #E0C79A;
+		font-size: 20px;
 	}
 
 	h1 {

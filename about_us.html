@@ -9,8 +9,35 @@
 	<script src="https://kit.fontawesome.com/fed4e236a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<header>
+	
+		<div id=topbar>
+			<div class="menu"></div>
+		</div>
+		<input type="checkbox" id="toggle"/>
+		<label for="toggle" role="button">
+			<span></span>
+		</label>
+		
+		<nav id="navigation"> 
+			<h1>MENY</h1>
+			<ul>
+				<li><a href="/index.html">Hem</a></li><br/>
+				<li><a href="/product.html">Våra produkter</a></li><br />
+				<li><a href="/about_us.html">Om Royal Gadgets</a></li><br/>
+				<li><a href="#contact">Kontakta oss</a></li><br/>
+			</ul>
+		</nav>
+		
+
+		<p>Makes you feel like a royal in the kitchen</p>
+		<img class="logo" src="imgs/2.png">
+	
+	</header>
+
 	<!-- Om Företaget -->
 	<main>
+		<div class="header-filler"></div>
 		<h1>Om Royal Gadgets</h1>
 		<section class="box info-box box-left">
 			<p><strong>Vår vision</strong> är att skapa revolutionerande köksredskap för att
@@ -77,5 +104,46 @@
 				kolla in våra lediga tjänster för mer information.</p>
 		</section>
 	</main>
+	<footer>
+		<div id="footer-content">
+			<div class="footer-group">
+				<span>Kundservice</span>
+				<ul>
+					<li><a href="#contact">Kontakta oss</a></li>
+					<li>Retur & reklamation</li>
+					<li>Frakt & Leverans</li>
+					<li>Köpvillkor</li>
+					<li>Frågor & Svar</li>
+					<li>Beställ reservdelar</li>
+				</ul>
+			</div>
+			<div class="footer-group">
+				<span>Om oss</span>
+				<ul>
+					<li><a href="about_us.html">Om Royal Gadgets</a></li>
+					<li>Våra återförsäljare</li>
+					<li>Jobba hos oss</li>
+				</ul>
+			</div>
+			<div class="footer-group">
+				<span>Erbjudanden</span>
+				<ul>
+					<li><a href="product.html">Våra produkter</a></li>
+				</ul>
+				<div id="footer-social-content">
+					<span>Följ oss</span>
+					<br />
+					<i class="fa-brands fa-instagram"></i>
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-linkedin"></i>
+					<i class="fa-brands fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+		<div id="footer-branding-box">
+			<span>Made by</span>
+			<span id="logo-branding">Crypto Surfers</span>
+		</div>
+	</footer>
 </body>
 </html>
