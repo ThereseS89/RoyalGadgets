@@ -284,6 +284,7 @@ strong {
 .profile-box p {
     padding: 0.025em;
     width: inherit;
+    padding-left: 1em;
 }
 
 .profile-box > *:not(.profile-img) {
